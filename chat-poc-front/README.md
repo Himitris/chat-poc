@@ -1,27 +1,39 @@
-# ChatPoc
+### README frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+```markdown
+# chat-poc - Frontend
 
-## Development server
+Ce projet frontend utilise Angular pour fournir une interface utilisateur pour le chat en temps réel.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prérequis
 
-## Code scaffolding
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js et npm : [Télécharger Node.js](https://nodejs.org/)
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clonez le repository :
+   ```sh
+   git clone https://github.com/votre-utilisateur/your-car-your-way.git
+   cd your-car-your-way/frontend
 
-## Running unit tests
+2. Installez les dépendances :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+npm install
 
-## Running end-to-end tests
+## Lancement de l'application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Démarrez l'application Angular :
 
-## Further help
+ng serve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Ouvrez votre navigateur et allez à http://localhost:4200.
+
+##  Structure du projet
+chat.component.ts : Composant principal gérant l'interface de chat.
+web-socket.service.ts : Service gérant les communications WebSocket avec le serveur backend.
+
+##  Fonctionnalités
+Envoi et réception de messages en temps réel.
+Interface utilisateur simple pour envoyer des messages et voir les messages reçus.
