@@ -1,6 +1,5 @@
 ### README frontend
 
-```markdown
 # chat-poc - Frontend
 
 Ce projet frontend utilise Angular pour fournir une interface utilisateur pour le chat en temps réel.
@@ -14,20 +13,20 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 ## Installation
 
 1. Clonez le repository :
-   ```sh
-   git clone https://github.com/votre-utilisateur/your-car-your-way.git
-   cd your-car-your-way/frontend
-
+```
+git clone https://github.com/votre-utilisateur/your-car-your-way.git
+cd your-car-your-way/frontend
+```
 2. Installez les dépendances :
-
+```
 npm install
-
+```
 ## Lancement de l'application
 
 1. Démarrez l'application Angular :
-
+```
 ng serve
-
+```
 2. Ouvrez votre navigateur et allez à http://localhost:4200.
 
 ##  Structure du projet

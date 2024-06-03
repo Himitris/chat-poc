@@ -1,6 +1,5 @@
 ### README backend
 
-```markdown
 # Chat - Backend
 
 Ce projet backend utilise Spring Boot pour fournir une API de chat en temps réel via WebSocket.
@@ -15,20 +14,21 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 ## Installation
 
 1. Clonez le repository :
-   ```sh
+```
    git clone https://github.com/votre-utilisateur/your-car-your-way.git
    cd chat-poc/chat-poc-back
+```
 
 2. Installez les dépendances :
-
+```
 mvn install
 Lancement du serveur
-
+```
 3. Démarrez le serveur Spring Boot :
-
+```
 mvn spring-boot:run
 Le serveur sera disponible sur http://localhost:8084.
-
+```
 ## Structure du projet
 
 ChatController.java : Contrôleur principal gérant les messages de chat.
