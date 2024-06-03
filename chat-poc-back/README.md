@@ -11,12 +11,11 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 - Java 11 ou supérieur : [Télécharger Java](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Maven : [Télécharger Maven](https://maven.apache.org/download.cgi)
 
-Installation
+## Installation
 
-1. Clonez le repository :
+1. Se deplacer dans le dossier backend :
 ```
-   git clone https://github.com/votre-utilisateur/your-car-your-way.git
-   cd chat-poc/chat-poc-back
+   cd chat-poc-back
 ```
 
 2. Installez les dépendances :

@@ -21,7 +21,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 1. Clonez le repository :
 ```
-   git clone https://github.com/votre-utilisateur/chat-poc.git
+   git clone https://github.com/Himitris/chat-poc.git
    cd chat-poc
 ```
 

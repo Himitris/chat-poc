@@ -12,10 +12,9 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 ## Installation
 
-1. Clonez le repository :
+1. Se deplacer dans le dossier frontend :
 ```
-    git clone https://github.com/votre-utilisateur/your-car-your-way.git
-    cd your-car-your-way/frontend
+    cd chat-poc-front
 ```
 2. Installez les dépendances :
 ```
