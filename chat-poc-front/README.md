@@ -30,8 +30,10 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 ##  Structure du projet
 chat.component.ts : Composant principal gérant l'interface de chat.
+
 web-socket.service.ts : Service gérant les communications WebSocket avec le serveur backend.
 
 ##  Fonctionnalités
 Envoi et réception de messages en temps réel.
+
 Interface utilisateur simple pour envoyer des messages et voir les messages reçus.

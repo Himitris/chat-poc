@@ -34,12 +34,15 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 ## Structure du projet
 
 ChatController.java : Contrôleur principal gérant les messages de chat.
+
 WebSocketConfig.java : Configuration du WebSocket pour permettre les communications en temps réel.
 
 ## API
 Le serveur expose les points de terminaison suivants pour WebSocket :
 
 /chat-websocket : Point de terminaison pour établir la connexion WebSocket.
+
 /app/sendMessage : Point de terminaison pour envoyer des messages.
+
 /topic/messages : Canal pour recevoir des messages en temps réel.
 
