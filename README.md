@@ -20,8 +20,10 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 ## Installation
 
 1. Clonez le repository :
+```
    git clone https://github.com/votre-utilisateur/chat-poc.git
    cd chat-poc
+```
 
 2. Suivez les instructions dans les README respectifs pour installer les dépendances du backend et du frontend.
 

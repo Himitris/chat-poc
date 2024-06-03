@@ -14,18 +14,18 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 1. Clonez le repository :
 ```
-git clone https://github.com/votre-utilisateur/your-car-your-way.git
-cd your-car-your-way/frontend
+    git clone https://github.com/votre-utilisateur/your-car-your-way.git
+    cd your-car-your-way/frontend
 ```
 2. Installez les dépendances :
 ```
-npm install
+    npm install
 ```
 ## Lancement de l'application
 
 1. Démarrez l'application Angular :
 ```
-ng serve
+    ng serve
 ```
 2. Ouvrez votre navigateur et allez à http://localhost:4200.
 

@@ -11,7 +11,7 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 - Java 11 ou supérieur : [Télécharger Java](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Maven : [Télécharger Maven](https://maven.apache.org/download.cgi)
 
-## Installation
+Installation
 
 1. Clonez le repository :
 ```
@@ -21,14 +21,17 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
 2. Installez les dépendances :
 ```
-mvn install
-Lancement du serveur
+    mvn install
 ```
-3. Démarrez le serveur Spring Boot :
+
+## Lancement du serveur
+1. Démarrez le serveur Spring Boot :
 ```
-mvn spring-boot:run
-Le serveur sera disponible sur http://localhost:8084.
+    mvn spring-boot:run
 ```
+
+2. Le serveur sera disponible sur http://localhost:8084.
+
 ## Structure du projet
 
 ChatController.java : Contrôleur principal gérant les messages de chat.
