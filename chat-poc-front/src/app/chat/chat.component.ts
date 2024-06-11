@@ -10,9 +10,11 @@ import { Subscription } from 'rxjs/internal/Subscription';
 export class ChatComponent implements OnDestroy {
   messages: any[] = [];
   messageContent: string = '';
+  userName: string;
   private subscriptions: Subscription = new Subscription();
 
   constructor(private webSocketService: WebSocketService) {
+    this.userName = this.webSocketService.getUserName();
     this.subscriptions = this.webSocketService
       .getMessages()
       .subscribe((message) => {
@@ -25,16 +27,12 @@ export class ChatComponent implements OnDestroy {
   }
 
   sendMessage() {
-    console.log('Contenu du message:', this.messageContent);
     if (this.messageContent.trim()) {
-      console.log('passé');
       this.webSocketService.sendMessage({
-        from: 'User',
+        from: this.userName,
         content: this.messageContent,
       });
       this.messageContent = '';
-    } else {
-      console.log('Message vide ou invalide');
     }
   }
 }
