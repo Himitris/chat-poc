@@ -21,7 +21,7 @@ CREATE TABLE Vehicle (
     id INT PRIMARY KEY,
     model VARCHAR(255) NOT NULL,
     year INT NOT NULL,
-    agencyId INTNOT NULL,
+    agencyId INT NOT NULL,
     FOREIGN KEY (agencyId) REFERENCES Agency(id)
 );
 
