@@ -1,6 +1,7 @@
 import { Component, OnDestroy } from '@angular/core';
 import { WebSocketService } from '../service/web-socket.service';
 import { Subscription } from 'rxjs/internal/Subscription';
+import { Message } from '../message';
 
 @Component({
   selector: 'app-chat',
@@ -8,7 +9,7 @@ import { Subscription } from 'rxjs/internal/Subscription';
   styleUrls: ['./chat.component.scss'],
 })
 export class ChatComponent implements OnDestroy {
-  messages: any[] = [];
+  messages: Message[] = [];
   messageContent: string = '';
   userName: string;
   private subscriptions: Subscription = new Subscription();
@@ -26,7 +27,7 @@ export class ChatComponent implements OnDestroy {
     this.subscriptions.unsubscribe();
   }
 
-  sendMessage() {
+  sendMessage() : void {
     if (this.messageContent.trim()) {
       this.webSocketService.sendMessage({
         from: this.userName,

@@ -1,17 +1,23 @@
 import { Injectable } from '@angular/core';
 import { Stomp } from '@stomp/stompjs';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import SockJS from 'sockjs-client';
 import { Chance } from 'chance';
+import { Message } from '../message';
 
 const chance = new Chance();
+
+interface ShortMessage {
+  from: string;
+  content: string;
+}
 
 @Injectable({
   providedIn: 'root',
 })
 export class WebSocketService {
   private stompClient;
-  private messageSubject = new Subject<any>();
+  private messageSubject = new Subject<Message>();
   private userId: string;
   private userName: string;
 
@@ -28,7 +34,7 @@ export class WebSocketService {
     });
   }
 
-  sendMessage(message: any) {
+  sendMessage(message: ShortMessage): void {
     const messageWithUserId = {
       ...message,
       userId: this.userId,
@@ -41,15 +47,15 @@ export class WebSocketService {
     );
   }
 
-  getMessages() {
+  getMessages(): Observable<Message> {
     return this.messageSubject.asObservable();
   }
 
-  getUserId() {
+  getUserId(): string {
     return this.userId;
   }
 
-  getUserName() {
+  getUserName(): string {
     return this.userName;
   }
 }
